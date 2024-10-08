@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navigation Bar</title>
+    <link rel="icon" type="pic_graha2.jpg" href="pic_graha2.jpg">
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" 
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"/>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+<style>
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*:not(i) {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background-color: #2c8eec;
+  padding: 3rem 5rem;
+
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+nav a {
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+nav a#logo {
+  color: #000000;
+  font-weight: 700;
+}
+nav ul a {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+section#home {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+h1 {
+  font-size: 4rem;
+}
+#ham-menu {
+  display: none;
+}
+nav ul.active {
+  left: 0;
+}
+@media only screen and (max-width: 991px) {
+  html {
+    font-size: 56.25%;
+  }
+  header {
+    padding: 2.2rem 5rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
+  #ham-menu {
+    display: block;
+    color: #ffffff;
+  }
+  nav a#logo,
+  #ham-menu {
+    font-size: 3.2rem;
+  }
+  nav ul {
+    background-color: black;
+    position: fixed;
+    left: -100vw;
+    top: 73.6px;
+    width: 100vw;
+    height: calc(100vh - 73.6px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: 1s;
+    gap: 0;
+  }
+}
+@media only screen and (max-width: 575px) {
+  html {
+    font-size: 46.87%;
+  }
+  header {
+    padding: 2rem 3rem;
+  }
+  nav ul {
+    top: 65.18px;
+    height: calc(100vh - 65.18px);
+  }
+}
+nav a {
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+nav a#logo {
+  color: #ffffff;
+  font-weight: 700;
+}
+nav ul a {
+  color: #ffffff;
+  font-weight: 600;
+}
+section {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #1f242d;
+    font-size: 100px;
+    color: #09e780;
+    font-weight: 700;
+}
+section:nth-child(odd) {
+    background: #323946;
+}
+h1 {
+  font-size: 4rem;
+}
+#ham-menu {
+  display: none;
+}
+nav ul.active {
+  left: 0;
+}
+@media only screen and (max-width: 991px) {
+  html {
+    font-size: 56.25%;
+  }
+  header {
+    padding: 2.2rem 5rem;
+  }
+}
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 50%;
+  }
+  #ham-menu {
+    display: block;
+    color: #ffffff;
+  }
+  nav a#logo,
+  #ham-menu {
+    font-size: 3.2rem;
+  }
+  nav ul {
+    background-color: black;
+    position: fixed;
+    left: -100vw;
+    top: 73.6px;
+    width: 100vw;
+    height: calc(100vh - 73.6px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: 1s;
+    gap: 0;
+  }
+}
+@media only screen and (max-width: 575px) {
+  html {
+    font-size: 46.87%;
+  }
+  header {
+    padding: 2rem 3rem;
+  }
+  nav ul {
+    top: 65.18px;
+    height: calc(100vh - 65.18px);
+  }
+}
+
+.flex-container {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    height: 590px;
+    left:10pt;
+    width: 890px;
+    background-color: black;
+    opacity: 0.5;
+    color:white;
+    margin-right:690pt;
+}
+
+.flex-container0 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    left:10pt;
+    align-items: flex-start;
+    font-size: 30pt;
+    opacity: 0.5;
+    color:white;
+}
+
+.flex-container1 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    margin-top: 50pt;
+    left:10pt;
+    align-items: flex-start;
+    font-size: 20pt;
+    opacity: 0.5;
+    color:white;
+}
+
+.flex-container2 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    margin-top: 210pt;
+    left:10pt;
+    align-items: flex-start;
+    font-size: 20pt;
+    opacity: 0.5;
+    color:white;
+}
+
+.flex-container3 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 40pt;
+    color:white;
+    margin-right:1190pt;
+    margin-bottom:590pt;
+    opacity: 0.5;
+}
+
+.flex-container4 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 30pt;
+    color:white;
+    margin-right:1250pt;
+    margin-bottom:500pt;
+    opacity: 0.5;
+}
+
+.flex-container5 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    margin-left:40pt;
+    margin-bottom:390pt;
+    color:white;
+    opacity: 0.5;
+}
+
+.flex-container6 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 30pt;
+    color:white;
+    margin-right:1250pt;
+    margin-bottom:270pt;
+    opacity: 0.5;
+}
+
+.flex-container7 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-left:40pt;
+    margin-bottom:100pt;
+    opacity: 0.5;
+}
+
+.flex-container8 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 30pt;
+    color:white;
+    margin-right:1165pt;
+    margin-bottom:470pt;
+    opacity: 0.5;
+}
+
+.flex-container9 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-right:1205pt;
+    margin-bottom:380pt;
+    opacity: 0.5;
+}
+
+.flex-container10 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-right:1220pt;
+    margin-bottom:320pt;
+    opacity: 0.5;
+}
+
+.flex-container11 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-right:1245pt;
+    margin-bottom:260pt;
+    opacity: 0.5;
+}
+
+.flex-container12 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-right:1210pt;
+    margin-bottom:200pt;
+    opacity: 0.5;
+}
+
+.flex-container13 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-right:1220pt;
+    margin-bottom:140pt;
+    opacity: 0.5;
+}
+
+.flex-container14 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-right:1210pt;
+    margin-bottom:80pt;
+    opacity: 0.5;
+}
+
+.flex-container15 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-right:1210pt;
+    margin-bottom:20pt;
+    opacity: 0.5;
+}
+
+.flex-container16 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-right:1142pt;
+    margin-top:35pt;
+    opacity: 0.5;
+}
+
+.flex-container16 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-right:1142pt;
+    margin-top:35pt;
+    opacity: 0.5;
+}
+
+.flex-container17 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 30pt;
+    color:white;
+    margin-right: 200pt;
+    margin-bottom:470pt;
+    opacity: 0.5;
+}
+
+.flex-container18 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-bottom:380pt;
+    margin-right:235pt;
+    opacity: 0.5;
+}
+
+.flex-container19 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-bottom:320pt;
+    margin-right:250pt;
+    opacity: 0.5;
+}
+
+.flex-container20 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-bottom:260pt;
+    margin-right:345pt;
+    opacity: 0.5;
+}
+
+.flex-container21 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-bottom:200pt;
+    margin-right:250pt;
+    opacity: 0.5;
+}
+
+.flex-container22 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-bottom:140pt;
+    margin-right:245pt;
+    opacity: 0.5;
+}
+
+.flex-container23 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-bottom:80pt;
+    margin-right:245pt;
+    opacity: 0.5;
+}
+
+.flex-container24 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-bottom: 20pt;
+    margin-right:273pt;
+    opacity: 0.5;
+}
+
+.flex-container25 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-top: 40pt;
+    margin-right:265pt;
+    opacity: 0.5;
+}
+
+.flex-container26 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-top: 100pt;
+    margin-right:265pt;
+    opacity: 0.5;
+}
+
+.flex-container27 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-top: 155pt;
+    margin-right:321pt;
+    opacity: 0.5;
+}
+
+.flex-container28 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-top: 210pt;
+    margin-right:315pt;
+    opacity: 0.5;
+}
+
+.flex-container29 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-top: 270pt;
+    margin-right:315pt;
+    opacity: 0.5;
+}
+
+.flex-container30 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 30pt;
+    color:white;
+    margin-left:800pt;
+    margin-bottom:470pt;
+    opacity: 0.5;
+}
+
+.flex-container31 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-bottom:380pt;
+    margin-left:690pt;
+    opacity: 0.5;
+}
+
+.flex-container32 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-bottom:320pt;
+    margin-left:675pt;
+    opacity: 0.5;
+}
+
+.flex-container33 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-bottom:260pt;
+    margin-left:695pt;
+    opacity: 0.5;
+}
+
+.flex-container34 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-bottom:200pt;
+    margin-left:725pt;
+    opacity: 0.5;
+}
+
+.flex-container35 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-bottom:140pt;
+    margin-left:732pt;
+    opacity: 0.5;
+}
+
+.flex-container36 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-bottom:80pt;
+    margin-left:640pt;
+    opacity: 0.5;
+}
+
+.flex-container37 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-bottom:20pt;
+    margin-left:650pt;
+    opacity: 0.5;
+}
+
+.flex-container38 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-top:40pt;
+    margin-left:675pt;
+    opacity: 0.5;
+}
+
+.flex-container39 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20pt;
+    color:white;
+    margin-top:100pt;
+    margin-left:685pt;
+    opacity: 0.5;
+}
+
+.flex-container40 {
+  display: flex;
+  position: absolute;
+    justify-content: left;
+    text-align: left;
+    align-items: flex-start;
+    font-size: 40pt;
+    color:white;
+    margin-bottom:600pt;
+    opacity: 0.5;
+}
+
+.btn1 { 
+    position: absolute;
+    top: 400pt;
+    left: 110pt;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #13c27f;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.btn1:hover {
+    background-color: black;
+}
+
+a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+header h2 {
+  font-weight: 400;
+}
+
+.scroll-container {
+  height: 100vh;
+  min-height: 450px;
+  padding: 2rem 1rem;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.scroll-container:nth-of-type(1) {
+  background-color: #75caa1;
+}
+
+.scroll-container:nth-of-type(even) {
+  flex-direction: row-reverse;
+}
+
+.scroll-element,
+.scroll-caption {
+  width: 50%;
+}
+
+.scroll-element {
+  min-height: 300px;
+  height: 100%;
+  background-color: #eaeaea;
+}
+
+.scroll-caption {
+  margin: 1rem;
+}
+
+@media screen and (max-width: 650px) {
+  .scroll-container,
+  .scroll-container:nth-of-type(even) {
+    flex-direction: column;
+    align-content: inherit;
+  }
+
+  .scroll-element {
+    height: 100%;
+  }
+
+  .scroll-element,
+  .scroll-caption {
+    width: 100%;
+  }
+}
+/**Styling scrollable elements*/
+
+.js-scroll {
+  opacity: 0;
+  transition: opacity 500ms;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+}
+
+.container {
+        width: 100%;
+        height: 100vh;
+        background: #222;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .swiper {
+        width: 80%;
+        height: fit-content;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+    }
+
+    .swiper .swiper-button-prev, .swiper .swiper-button-next {
+        color: #fff;
+    }
+
+    .swiper .swiper-pagination-bullet-active {
+        background: #fff;
+    }
+
+    .container5 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 60px;
+}
+
+.number {
+font-size: 20pt;
+margin-top: 10pt;
+}
+
+</style>
+  <body>
+    <header>
+      <nav>
+        <a href="#home" id="logo">Graha Estetika Indonesia</a>
+        <i class="fas fa-bars" id="ham-menu"></i>
+        <ul id="nav-bar">
+          <li>
+            <a href="#home">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section id="home">
+      <div class="flex-container"><div class="flex-container0">PT. Graha Estetika Indonesia</div><div class="flex-container1">Graha Estetika Indonesia is a Design and Built based construction company 
+        (General Contractor) which was founded in 2013. Our company serves various projects such as architecture, interior, landscape, civil and Mechanical-Electrical in residential 
+        buildings, offices and buildings. The project serves the Jabodetabek area and surrounding areas.</div>
+        <div class="flex-container2">Graha Estetika Indonesia merupakan perusahaan konstruksi (General Contractor) yang berbasis Design and Built yang didirikan pada tahun 2013. 
+          Perusahaan kami melayani berbagai projek seperti arsitektur, interior, landscape, sipil dan ME pada bangunan rumah tinggal, kantor dan gedung. Projek kami melayani area 
+          Jabodetabek dan sekitarnya.</div>
+          <button class="btn1"><a href="#about">see details for more information</a>
+    </div>
+    </section>
+    <section id="about">
+      <div class="container reveal fade-left active">
+      <div class="flex-container3">About</div>
+      <div class="flex-container4">Visi</div>
+      <div class="flex-container5">Menjadikan perusahaan yang handal, terpercaya, transparan, & profesional yang berkelas dunia dengan didukung tenaga ahli demi kepuasan masyarakat.</div>    
+      <div class="flex-container6">Misi</div>
+      <div class="flex-container7">Menghasilkan karya konstruksi yang fenomenal, Menjunjung tinggi konsep konstruksi hijau berwawasan lingkungan dan bangunan berkelanjutan, Menjaga 
+        hubungan kerja yang baik antar mitra maupun pelanggan dengan konsep kebersamaan, keterbukaan, dan permusyawarahan, Melaksanakan proyek konstruksi dengan memperhatikan biaya, 
+        mutu, waktu secara sistematis, jujur, amanah, dan terpercaya, dan menghasilkan karya arsitektur dengan memperhatikan nilai suatu bangunan.</div>    
+      </div>
+    </section>
+    <section id="services">
+      <div class="flex-container3">Services</div>
+      <div class="flex-container8">Construction</div>
+      <div class="flex-container9">- New Building</div>
+      <div class="flex-container10">- Renovation</div>
+      <div class="flex-container11">- Planning</div>
+      <div class="flex-container12">- Land Survey</div>
+      <div class="flex-container13">- Civil Works</div>
+      <div class="flex-container14">- Maintenance</div>
+      <div class="flex-container15">- Raised Floor</div>
+      <div class="flex-container16">- Building Demolition</div>
+      <div class="flex-container17">Electrical Construction</div>
+      <div class="flex-container18">- Cable Connection Installation</div>
+      <div class="flex-container19">- Cable Connection Repairing</div>
+      <div class="flex-container20">- Cable Dismantling</div>
+      <div class="flex-container21">- Electrical Switch Installation</div>
+      <div class="flex-container22">- Electrical Switch Replacment</div>
+      <div class="flex-container23">- Electrical Switch Dismantling</div>
+      <div class="flex-container24">- Electrical MCB Installation</div>
+      <div class="flex-container25">- Electrical MCB Replacment</div>
+      <div class="flex-container26">- Electrical MCB Dismantling</div>
+      <div class="flex-container27">- Lightning Installation</div>
+      <div class="flex-container28">- Lightning Replacment</div>
+      <div class="flex-container29">- Lightning Dismantling</div>
+      <div class="flex-container30">Pipeline Construction</div>
+      <div class="flex-container31">- Pipeline Installation</div>
+      <div class="flex-container32">- Pipeline Repairing</div>
+      <div class="flex-container33">- Pipeline Dismantling</div>
+      <div class="flex-container34">- Water Pump Installation</div>
+      <div class="flex-container35">- Water Pump Dismantling</div>
+      <div class="flex-container36">- Tap Installation</div>
+      <div class="flex-container37">- Tap Dismantling</div>
+      <div class="flex-container38">- Torrent Installation</div>
+      <div class="flex-container39">- Torrent Dismantling</div>
+      </section>
+    <section id="projects"><div class="container">
+      <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+              <div class="swiper-slide"><img width="5pt" height="590pt" src="bsd.jpg"></div>
+              <div class="swiper-slide"><img width="5pt" height="590pt" src="Gallery_Bintaro.jpg"></div>
+              <div class="swiper-slide"><img width="5pt" height="590pt" src="gallery_cinere.jpg"></div>
+              <div class="swiper-slide"><img width="5pt" height="590pt" src="gallery_depok.jpg"></div>
+              <div class="swiper-slide"><img width="5pt" height="590pt" src="gallery_fatmawati.jpg"></div>
+              <div class="swiper-slide"><img width="5pt" height="590pt" src="gallery_pondok_gede.jpg"></div>
+              <div class="swiper-slide"><img width="5pt" height="590pt" src="Gallery_Serang.jpg"></div>
+              <div class="swiper-slide"><img width="5pt" height="590pt" src="mgw_cirebon.jpg"></div>
+              <div class="swiper-slide"><img width="5pt" height="590pt" src="Sabang.jpg"></div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>      
+        </div>
+      </div>
+      <div class="flex-container40">Projects</div>
+      </section>
+    <section id="contact">
+      <div class="container5">
+        <h1>Embed Location Map</h1>
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.325665280935!2d106.67132337499037!3d-6.220717093767319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f9e6aedc18e9%3A0xb6c2a90722d2e6fd!2sGRAHA%20ESTETIKA%20INDONESIA.%20PT%20(AURA%20GALERI)!5e0!3m2!1sen!2sid!4v1698032165149!5m2!1sen!2sid" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <a href="tel:123-456-7890" class="number">081-283-846-633</a>
+        <a href="https://wa.me/081283846633" target="_black"><i class="fa fa-whatsapp" style="font-size:40px"></i></a>
+        </div>
+        
+    </section>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+  <script>let hamMenuIcon = document.getElementById("ham-menu");
+    let navBar = document.getElementById("nav-bar");
+    let navLinks = navBar.querySelectorAll("li");
+    
+    hamMenuIcon.addEventListener("click", () => {
+      navBar.classList.toggle("active");
+      hamMenuIcon.classList.toggle("fa-times");
+    });
+    navLinks.forEach((navLinks) => {
+      navLinks.addEventListener("click", () => {
+        navBar.classList.remove("active");
+        hamMenuIcon.classList.toggle("fa-times");
+      });
+    });
+    const scrollElements = document.querySelectorAll(".js-scroll");
+const throttleCount = document.getElementById('throttle-count');
+const scrollCount = document.getElementById('scroll-count');
+
+var throttleTimer;
+
+const throttle = (callback, time) => {
+  if (throttleTimer) return;
+
+  throttleTimer = true;
+  setTimeout(() => {
+    callback();
+    throttleTimer = false;
+  }, time);
+}
+
+const elementInView = (el, dividend = 1) => {
+  const elementTop = el.getBoundingClientRect().top;
+
+  return (
+    elementTop <=
+    (window.innerHeight || document.documentElement.clientHeight) / dividend
+  );
+};
+
+const elementOutofView = (el) => {
+  const elementTop = el.getBoundingClientRect().top;
+
+  return (
+    elementTop > (window.innerHeight || document.documentElement.clientHeight)
+  );
+};
+
+const displayScrollElement = (element) => {
+  element.classList.add("scrolled");
+};
+
+const hideScrollElement = (element) => {
+  element.classList.remove("scrolled");
+};
+
+const handleScrollAnimation = () => {
+  scrollElements.forEach((el) => {
+    if (elementInView(el, 1.25)) {
+      displayScrollElement(el);
+    } else if (elementOutofView(el)) {
+      hideScrollElement(el)
+    }
+  })
+}
+var timer=0;
+var count=0;
+var scroll = 0;
+
+window.addEventListener("scroll", () => { 
+  scrollCount.innerHTML = scroll++;
+  throttle(() => {
+    handleScrollAnimation();
+    throttleCount.innerHTML = count++;
+  }, 250);
+});
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+    const swiper = new Swiper('.swiper', {
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        loop: true,
+    
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    
+    });
+        
+    </script>
+</html>
